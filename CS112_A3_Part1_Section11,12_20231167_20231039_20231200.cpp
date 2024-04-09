@@ -866,7 +866,7 @@ Image Gamal_detect_edges(string image_name)
                 int magnitude = sqrt(pow(gx, 2) + pow(gy, 2));
 
                 // Apply thresholding to obtain binary edges
-                unsigned char edgeValue = (magnitude > 200) ? 0 : 255;
+                unsigned char edgeValue = (magnitude > 100) ? 0 : 255;
 
                 // Set the pixel value in the output image
                 Gamal_output_image(x, y, 0) = edgeValue;
