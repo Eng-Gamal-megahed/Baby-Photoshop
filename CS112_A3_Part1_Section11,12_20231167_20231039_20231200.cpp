@@ -35,32 +35,35 @@ Image Crop_Images(string);
 Image Rotate_Image(string);
 Image Invert_Image(string);
 string get_image(string);
-Image detect_edges(string);
+Image Gamal_detect_edges(string);
+Image Gamal_sunlight(string);
 bool valid_exe(string);
 // string saveBefore(bool);
 bool unsaved_image = false;
 Image saved_image;
 int main()
 {
-    string filename;
+    string Gamal_Khatab_Mostafa_filename;
     int choice; // Welcome message
     cout << BOLD << "🤩🥰❤ Ahllan Ya User Ya Habyby ❤🥰🤩\n"
          << RESET_COLOR;
     SYSTEM_COLOR = color();
-    cout << "\n============\n";
-    // get the filename or image name from the user.
-    filename = get_image(SYSTEM_COLOR + "Enter the file(image) you want to do filters on:" + RESET_COLOR);
+    cout << "===========================================================\n";
+    cout << "===========================================================\n";
+
+    // get the Gamal_Khatab_Mostafa_filename or image name from the user.
+    Gamal_Khatab_Mostafa_filename = get_image(SYSTEM_COLOR + "Enter the file(image) you want to do filters on:" + RESET_COLOR);
 
     while (true)
     { // let the user choose the filter he wants
-        cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images.\n9) Detect Edges\n10) Save the image.\n11) Exit\n"
+        cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images.\n10) Detect Edges\n13) Natural Sunlight\n19) Save the image.\n20) Exit\n"
              << RESET_COLOR;
         choice = get_int("Enter your choice: "); // Check the validation of the input
-        while (choice != 0 && choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 7 && choice != 8 && choice != 9 && choice != 10 && choice != 11)
+        while (choice != 0 && choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 7 && choice != 8 && choice != 10 && choice != 13 && choice != 19 && choice != 20)
         {
             cout << RED << "Invalid input! PLease, Follow the instructions.\n"
                  << RESET_COLOR;
-            cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images.\n9) Detect Edges\n10) Save the image.\n11) Exit\n"
+            cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images.\n10) Detect Edges\n13) Natural Sunlight\n19) Save the image.\n20) Exit\n"
                  << RESET_COLOR;
             choice = get_int("Enter your choice: ");
         }
@@ -94,11 +97,11 @@ int main()
                         }
                         if (c == 'a') // Save the changes
                         {
-                            string new_filename = filename, old_filename = "saved.jpg";
+                            string new_filename = Gamal_Khatab_Mostafa_filename, old_filename = "saved.jpg";
                             ;
-                            remove(filename.c_str());
+                            remove(Gamal_Khatab_Mostafa_filename.c_str());
                             rename(old_filename.c_str(), new_filename.c_str());
-                            system(filename.c_str());
+                            system(Gamal_Khatab_Mostafa_filename.c_str());
                         }
                         else if (c == 'b') // Don`t save the changes
                         {
@@ -122,8 +125,8 @@ int main()
                         flag = false;
                     }
                     else if (ch == "2")
-                    { // Insert a filename or image that he wants to apply the filter on.
-                        filename = get_image(SYSTEM_COLOR + "Enter the file(image) you want to do filters on: " + RESET_COLOR);
+                    { // Insert a Gamal_Khatab_Mostafa_filename or image that he wants to apply the filter on.
+                        Gamal_Khatab_Mostafa_filename = get_image(SYSTEM_COLOR + "Enter the file(image) you want to do filters on: " + RESET_COLOR);
                         flag = false;
                     }
                     else // ask him to restart ar repeat this stage again ( Invalid iput )
@@ -135,56 +138,61 @@ int main()
             }
             else
             {
-                filename = get_image(SYSTEM_COLOR + "Enter the file(image) you want to do filters on:" + RESET_COLOR);
+                Gamal_Khatab_Mostafa_filename = get_image(SYSTEM_COLOR + "Enter the file(image) you want to do filters on:" + RESET_COLOR);
             }
             unsaved_image = false;
         } // Now let the user choose the ideal filter to apply it
         else if (choice == 1)
         {
             remove("saved.jpg");
-            Gamal_gray_scale(filename);
+            Gamal_gray_scale(Gamal_Khatab_Mostafa_filename);
         }
         else if (choice == 2)
         {
             remove("saved.jpg");
-            Black_and_White(filename);
+            Black_and_White(Gamal_Khatab_Mostafa_filename);
         }
         else if (choice == 3)
         {
             remove("saved.jpg");
-            Invert_Image(filename);
+            Invert_Image(Gamal_Khatab_Mostafa_filename);
         }
         else if (choice == 4)
         {
             remove("saved.jpg");
-            Gamal_Merge_Images(filename);
+            Gamal_Merge_Images(Gamal_Khatab_Mostafa_filename);
         }
         else if (choice == 5)
         {
             remove("saved.jpg");
-            Flip_Image(filename);
+            Flip_Image(Gamal_Khatab_Mostafa_filename);
         }
         else if (choice == 6)
         {
             remove("saved.jpg");
-            Rotate_Image(filename);
+            Rotate_Image(Gamal_Khatab_Mostafa_filename);
         }
         else if (choice == 7)
         {
             remove("saved.jpg");
-            Gamal_Darken_and_Lighten_Image(filename);
+            Gamal_Darken_and_Lighten_Image(Gamal_Khatab_Mostafa_filename);
         }
         else if (choice == 8)
         {
             remove("saved.jpg");
-            Crop_Images(filename);
-        }
-        else if (choice == 9)
-        {
-            remove("saved.jpg");
-            detect_edges(filename);
+            Crop_Images(Gamal_Khatab_Mostafa_filename);
         }
         else if (choice == 10)
+        {
+            remove("saved.jpg");
+            Gamal_detect_edges(Gamal_Khatab_Mostafa_filename);
+        }
+        else if (choice == 13)
+        {
+            remove("saved.jpg");
+            Gamal_sunlight(Gamal_Khatab_Mostafa_filename);
+        }
+        else if (choice == 19)
         {
             char c; // ask him if he wants to save these canges on the image or change it, too
             cout << SYSTEM_COLOR << "Do you want to save changes in the same image?\n"
@@ -204,11 +212,11 @@ int main()
             }
             if (c == 'a') // save the changes on thesame image
             {
-                string new_filename = filename, old_filename = "saved.jpg";
+                string new_filename = Gamal_Khatab_Mostafa_filename, old_filename = "saved.jpg";
                 ;
-                remove(filename.c_str());
+                remove(Gamal_Khatab_Mostafa_filename.c_str());
                 rename(old_filename.c_str(), new_filename.c_str());
-                system(filename.c_str());
+                system(Gamal_Khatab_Mostafa_filename.c_str());
             }
             else if (c == 'b')
             {
@@ -230,7 +238,7 @@ int main()
             }
             unsaved_image = false;
         }
-        else if (choice == 11)
+        else if (choice == 20)
         {
             if (unsaved_image)
             {
@@ -260,11 +268,11 @@ int main()
                         }
                         if (c == 'a')
                         {
-                            string new_filename = filename, old_filename = "saved.jpg";
+                            string new_filename = Gamal_Khatab_Mostafa_filename, old_filename = "saved.jpg";
                             ;
-                            remove(filename.c_str());
+                            remove(Gamal_Khatab_Mostafa_filename.c_str());
                             rename(old_filename.c_str(), new_filename.c_str());
-                            system(filename.c_str());
+                            system(Gamal_Khatab_Mostafa_filename.c_str());
                         }
                         else if (c == 'b')
                         {
@@ -312,6 +320,8 @@ int main()
             cout << RED << "Invalid choice, please follow the instructions\n"
                  << RESET_COLOR;
         }
+        cout << "===========================================================\n";
+        cout << "===========================================================\n";
     }
     return 0;
 }
@@ -387,9 +397,9 @@ string color()
     return player_color;
 }
 //==========================================================================================================================
-Image Rotate_Image(string filename)
+Image Rotate_Image(string Gamal_Khatab_Mostafa_filename)
 {
-    Image khattab_image(filename);
+    Image khattab_image(Gamal_Khatab_Mostafa_filename);
     int angle; // Insert the angle
     cout << SYSTEM_COLOR << "Enter the Angle ( 90 , 180 , 270 ,360): " << RESET_COLOR;
     angle = get_int();
@@ -497,10 +507,10 @@ bool valid_exe(string exe)
     return false;
 }
 
-Image Invert_Image(string filename)
+Image Invert_Image(string Gamal_Khatab_Mostafa_filename)
 {
 
-    Image khattab_image(filename); // to invert the image i have to subtract the current value of the color from 255
+    Image khattab_image(Gamal_Khatab_Mostafa_filename); // to invert the image i have to subtract the current value of the color from 255
 
     for (int i = 0; i < khattab_image.width; i++)
     {
@@ -553,7 +563,7 @@ Image Gamal_Merge_Images(string Gamal_frst_photo)
 {
     string Gamal_scnd_photo, Gamal_merged_name;
 
-    Gamal_scnd_photo = get_image("Pls enter second image name : "); // read the second image from the user
+    Gamal_scnd_photo = get_image(SYSTEM_COLOR + "Pls enter second image name : "); // read the second image from the user
 
     Image Gamal_frst(Gamal_frst_photo), Gamal_scnd(Gamal_scnd_photo);
     int Gamal_min_width = min(Gamal_frst.width, Gamal_scnd.width);
@@ -583,7 +593,7 @@ Image Gamal_Darken_and_Lighten_Image(string Gamal_filename)
     //    Gamal_filename = get_image(SYSTEM_COLOR + "Pls enter colored image name: ");
     Image Gamal_image(Gamal_filename);
     char Gamal_choice1, Gamal_choice2;
-    cout << "What do you want to do ?\n"
+    cout << SYSTEM_COLOR << "What do you want to do ?\n"
          << "a)Lighten Image\n"
          << "b)Darken Image\n"
          << "choice:";
@@ -770,40 +780,141 @@ Image Crop_Images(string Mustafa_filename)
     return Mustafa_image;
 }
 
-Image detect_edges(string image_name)
+Image Gamal_detect_edges(string image_name)
 {
-
     // Load an image
     Image Gamal_image(image_name);
 
     // Create an instance for the output image
     Image Gamal_output_image(Gamal_image.width, Gamal_image.height);
 
-    // Loop through each pixel in the image
-    for (int y = 1; y < Gamal_image.height - 1; ++y)
+    char Gamal_choice;
+    // Prompt user to choose mood
+    cout << SYSTEM_COLOR << "Which mood do you want?\n"
+         << "a)🔥🔥 Fire Mood 🔥🔥\n"
+         << "b)🥱🥱 Simple Mood 🥱🥱\n"
+         << "Enter choice :";
+    cin >> Gamal_choice;
+
+    // Validate user input
+    while (Gamal_choice != 'a' && Gamal_choice != 'b')
     {
-        for (int x = 1; x < Gamal_image.width - 1; ++x)
+        // Invalid choice, ask again
+        cout << RED << "Invalid choice, please follow the instructions!\n"
+             << SYSTEM_COLOR
+             << "Which mood do you want?\n"
+             << "a)🔥🔥 Fire Mood 🔥🔥\n"
+             << "b)🥱 🥱 Simple Mood 🥱 🥱\n"
+             << "Enter choice :";
+        cin >> Gamal_choice;
+    }
+
+    if (Gamal_choice == 'a')
+    {
+        // Fire mood selected
+        // Loop through each pixel in the image
+        for (int y = 1; y < Gamal_image.height - 1; ++y)
         {
-            // Calculate horizontal gradient
-            int gx = -Gamal_image(x - 1, y - 1, 0) + Gamal_image(x + 1, y - 1, 0) - Gamal_image(x - 1, y, 0) + Gamal_image(x + 1, y, 0) - Gamal_image(x - 1, y + 1, 0) + Gamal_image(x + 1, y + 1, 0);
+            for (int x = 1; x < Gamal_image.width - 1; ++x)
+            {
+                // Calculate horizontal gradient
+                int gx = -Gamal_image(x - 1, y - 1, 0) + Gamal_image(x + 1, y - 1, 0) - Gamal_image(x - 1, y, 0) + Gamal_image(x + 1, y, 0) - Gamal_image(x - 1, y + 1, 0) + Gamal_image(x + 1, y + 1, 0);
 
-            // Calculate vertical gradient
-            int gy = -Gamal_image(x - 1, y - 1, 0) - Gamal_image(x, y - 1, 0) - Gamal_image(x + 1, y - 1, 0) + Gamal_image(x - 1, y + 1, 0) + Gamal_image(x, y + 1, 0) + Gamal_image(x + 1, y + 1, 0);
+                // Calculate vertical gradient
+                int gy = -Gamal_image(x - 1, y - 1, 0) - Gamal_image(x, y - 1, 0) - Gamal_image(x + 1, y - 1, 0) + Gamal_image(x - 1, y + 1, 0) + Gamal_image(x, y + 1, 0) + Gamal_image(x + 1, y + 1, 0);
 
-            // Calculate gradient magnitude
-            int magnitude = sqrt(pow(gx, 2) + pow(gy, 2));
+                // Calculate gradient magnitude
+                int magnitude = sqrt(pow(gx, 2) + pow(gy, 2));
 
-            // Apply thresholding to obtain binary edges
-            unsigned char edgeValue = (magnitude > 200) ? 0 : 255;
+                // Apply thresholding to obtain binary edges
+                unsigned char edgeValue = (magnitude > 200) ? 255 : 0;
 
-            // Set the pixel value in the output image
-            Gamal_output_image(x, y, 0) = edgeValue;
-            Gamal_output_image(x, y, 1) = edgeValue;
-            Gamal_output_image(x, y, 2) = edgeValue;
+                // Set the pixel value in the output image
+                if (edgeValue == 255)
+                {
+                    // Set color for edges in fire mood
+                    Gamal_output_image(x, y, 0) = edgeValue;
+                    Gamal_output_image(x, y, 1) = 50;
+                    Gamal_output_image(x, y, 2) = 0;
+                }
+                else
+                {
+                    // Set color for non-edges in fire mood
+                    Gamal_output_image(x, y, 0) = edgeValue;
+                    Gamal_output_image(x, y, 1) = edgeValue;
+                    Gamal_output_image(x, y, 2) = edgeValue;
+                }
+            }
+        }
+    }
+
+    if (Gamal_choice == 'b')
+    {
+        // Simple mood selected
+        // Loop through each pixel in the image
+        for (int y = 1; y < Gamal_image.height - 1; ++y)
+        {
+            for (int x = 1; x < Gamal_image.width - 1; ++x)
+            {
+                // Calculate horizontal gradient
+                int gx = -Gamal_image(x - 1, y - 1, 0) + Gamal_image(x + 1, y - 1, 0) - Gamal_image(x - 1, y, 0) + Gamal_image(x + 1, y, 0) - Gamal_image(x - 1, y + 1, 0) + Gamal_image(x + 1, y + 1, 0);
+
+                // Calculate vertical gradient
+                int gy = -Gamal_image(x - 1, y - 1, 0) - Gamal_image(x, y - 1, 0) - Gamal_image(x + 1, y - 1, 0) + Gamal_image(x - 1, y + 1, 0) + Gamal_image(x, y + 1, 0) + Gamal_image(x + 1, y + 1, 0);
+
+                // Calculate gradient magnitude
+                int magnitude = sqrt(pow(gx, 2) + pow(gy, 2));
+
+                // Apply thresholding to obtain binary edges
+                unsigned char edgeValue = (magnitude > 200) ? 0 : 255;
+
+                // Set the pixel value in the output image
+                Gamal_output_image(x, y, 0) = edgeValue;
+                Gamal_output_image(x, y, 1) = edgeValue;
+                Gamal_output_image(x, y, 2) = edgeValue;
+            }
         }
     }
 
     // Save the output image
     Gamal_output_image.saveImage("saved.jpg");
+    unsaved_image = true;
+    return Gamal_output_image;
+}
+
+Image Gamal_sunlight(string Gamal_Khatab_Mostafa_filename)
+{
+    // Create a new image with the same dimensions as the input image
+    Image Gamal_image(Gamal_Khatab_Mostafa_filename);
+    Image Gamal_output_image(Gamal_image.width, Gamal_image.height);
+
+    // Loop through each pixel in the image
+    for (int j = 0; j < Gamal_image.height; ++j)
+    {
+        for (int i = 0; i < Gamal_image.width; ++i)
+        {
+            // Get the original RGB values
+            int red = Gamal_image(i, j, 0);
+            int green = Gamal_image(i, j, 1);
+            int blue = Gamal_image(i, j, 2);
+
+            // Increase red and green channels while reducing blue channel
+            int yellow_red = red + 50;     // Increase red channel
+            int yellow_green = green + 50; // Increase green channel
+            int yellow_blue = blue - 20;   // Decrease blue channel
+
+            // Ensure RGB values are within the valid range [0, 255]
+            yellow_red = min(255, max(0, yellow_red));
+            yellow_green = min(255, max(0, yellow_green));
+            yellow_blue = min(255, max(0, yellow_blue));
+
+            // Set the modified RGB values to the output image
+            Gamal_output_image(i, j, 0) = yellow_red;
+            Gamal_output_image(i, j, 1) = yellow_green;
+            Gamal_output_image(i, j, 2) = yellow_blue;
+        }
+    }
+    Gamal_output_image.saveImage("saved.jpg");
+    unsaved_image = true;
     return Gamal_output_image;
 }
