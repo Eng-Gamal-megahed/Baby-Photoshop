@@ -35,14 +35,17 @@ Image Crop_Images(string);
 Image Rotate_Image(string);
 Image Invert_Image(string);
 string get_image(string);
+Image Frame_image(string);
 Image Gamal_detect_edges(string);
 Image Gamal_sunlight(string);
 bool valid_exe(string);
 // string saveBefore(bool);
 bool unsaved_image = false;
 Image saved_image;
+
 int main()
 {
+    system("chcp 65001"); // Set the console code page to UTF-8
     string Gamal_Khatab_Mostafa_filename;
     int choice; // Welcome message
     cout << BOLD << "🤩🥰❤ Ahllan Ya User Ya Habyby ❤🥰🤩\n"
@@ -56,14 +59,14 @@ int main()
 
     while (true)
     { // let the user choose the filter he wants
-        cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images.\n10) Detect Edges\n13) Natural Sunlight\n19) Save the image.\n20) Exit\n"
+        cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images. \n9) Frame \n10) Detect Edges\n13) Natural Sunlight\n19) Save the image.\n20) Exit\n"
              << RESET_COLOR;
         choice = get_int("Enter your choice: "); // Check the validation of the input
-        while (choice != 0 && choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 7 && choice != 8 && choice != 10 && choice != 13 && choice != 19 && choice != 20)
+        while (choice != 0 && choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 7 && choice != 8 && choice != 9 && choice != 10 && choice != 13 && choice != 19 && choice != 20)
         {
             cout << RED << "Invalid input! PLease, Follow the instructions.\n"
                  << RESET_COLOR;
-            cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images.\n10) Detect Edges\n13) Natural Sunlight\n19) Save the image.\n20) Exit\n"
+            cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images.\n9) Frame \n10) Detect Edges\n13) Natural Sunlight\n19) Save the image.\n20) Exit\n"
                  << RESET_COLOR;
             choice = get_int("Enter your choice: ");
         }
@@ -181,6 +184,11 @@ int main()
         {
             remove("saved.jpg");
             Crop_Images(Gamal_Khatab_Mostafa_filename);
+        }
+        else if (choice == 9)
+        {
+            remove("saved.jpg");
+            Frame_image(Gamal_Khatab_Mostafa_filename);
         }
         else if (choice == 10)
         {
@@ -406,7 +414,7 @@ Image Rotate_Image(string Gamal_Khatab_Mostafa_filename)
     // Check its validation
     while (cin.fail() || (angle != 90 && angle != 180 && angle != 270 && angle != 360))
     {
-        cout << SYSTEM_COLOR << "Invalid input! Plaese, Follow the instructions." << RESET_COLOR << endl;
+        cout << RED << "Invalid input! Plaese, Follow the instructions." << RESET_COLOR << endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << SYSTEM_COLOR << "Enter the Angle ( 90 , 180 , 270 , 360 ): " << RESET_COLOR;
@@ -827,7 +835,7 @@ Image Gamal_detect_edges(string image_name)
                 int magnitude = sqrt(pow(gx, 2) + pow(gy, 2));
 
                 // Apply thresholding to obtain binary edges
-                unsigned char edgeValue = (magnitude > 200) ? 255 : 0;
+                unsigned char edgeValue = (magnitude > 100) ? 255 : 0;
 
                 // Set the pixel value in the output image
                 if (edgeValue == 255)
@@ -917,4 +925,297 @@ Image Gamal_sunlight(string Gamal_Khatab_Mostafa_filename)
     Gamal_output_image.saveImage("saved.jpg");
     unsaved_image = true;
     return Gamal_output_image;
+}
+
+Image Frame_image(string khattab_filename)
+{
+
+    Image khattab_image(khattab_filename);
+    cout << "Which Frame you want.\n(1)Frame1\n(2)Frame2\n(3)Frame3: ";
+    int choice;
+    cin >> choice;
+    while (cin.fail() || (choice != 1 && choice != 2 && choice != 3))
+    {
+        cout << "Invalid input! Please, Follow the instructions." << endl;
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Which Frame you want.\n(1)Frame1\n(2)Frame2\n(3)Frame3: ";
+        cin >> choice;
+    }
+    if (choice == 1)
+    {
+        { // The first frame
+            for (int i = 0; i < 20; ++i)
+            { // Putting a frame from the left hand side in blue
+                for (int j = 0; j < khattab_image.height; ++j)
+                {
+                    khattab_image(i, j, 0) = 0;
+                    khattab_image(i, j, 1) = 0;
+                    khattab_image(i, j, 2) = 255;
+                }
+            }
+            for (int i = khattab_image.width - 1; i > khattab_image.width - 21; --i)
+            {
+                for (int j = 0; j < khattab_image.height; ++j)
+                {
+                    khattab_image(i, j, 0) = 0;
+                    khattab_image(i, j, 1) = 0;
+                    khattab_image(i, j, 2) = 255;
+                }
+            }
+            for (int i = 0; i < khattab_image.width - 1; ++i)
+            {
+                for (int j = 0; j < 20; ++j)
+                {
+                    khattab_image(i, j, 0) = 0;
+                    khattab_image(i, j, 1) = 0;
+                    khattab_image(i, j, 2) = 255;
+                }
+            }
+            for (int i = 0; i < khattab_image.width - 1; ++i)
+            {
+                for (int j = khattab_image.height - 1; j > khattab_image.height - 21; --j)
+                { // Initialize average value
+                    khattab_image(i, j, 0) = 0;
+                    khattab_image(i, j, 1) = 0;
+                    khattab_image(i, j, 2) = 255;
+                }
+            }
+        }
+    }
+    //===================================================================================
+    else if (choice == 2)
+    {
+
+        for (int i = 0; i < 20; ++i)
+        {
+            for (int j = 0; j < khattab_image.height; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 0;
+                khattab_image(i, j, 1) = 0;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = khattab_image.width - 1; i > khattab_image.width - 21; --i)
+        {
+            for (int j = 0; j < khattab_image.height; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 0;
+                khattab_image(i, j, 1) = 0;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 0; i < khattab_image.width - 1; ++i)
+        {
+            for (int j = 0; j < 20; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 0;
+                khattab_image(i, j, 1) = 0;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 0; i < khattab_image.width - 1; ++i)
+        {
+            for (int j = khattab_image.height - 1; j > khattab_image.height - 21; --j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 0;
+                khattab_image(i, j, 1) = 0;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        //=========================================================================================
+
+        for (int i = 20; i < 22; ++i)
+        {
+            for (int j = 20; j < khattab_image.height - 21; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = khattab_image.width - 21; i > khattab_image.width - 23; --i)
+        {
+            for (int j = 20; j < khattab_image.height - 21; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 20; i < khattab_image.width - 21; ++i)
+        {
+            for (int j = 20; j < 22; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 20; i < khattab_image.width - 21; ++i)
+        {
+            for (int j = khattab_image.height - 21; j > khattab_image.height - 23; --j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+
+        //======================================================================================
+        for (int i = 25; i < 28; ++i)
+        {
+            for (int j = 25; j < khattab_image.height - 26; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = khattab_image.width - 26; i > khattab_image.width - 29; --i)
+        {
+            for (int j = 25; j < khattab_image.height - 26; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 25; i < khattab_image.width - 26; ++i)
+        {
+            for (int j = 25; j < 28; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 25; i < khattab_image.width - 26; ++i)
+        {
+            for (int j = khattab_image.height - 26; j > khattab_image.height - 29; --j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+    }
+    //=======================================================================================
+    else
+    {
+
+        for (int i = 0; i < 20; ++i)
+        {
+            for (int j = 0; j < khattab_image.height; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 0;
+                khattab_image(i, j, 1) = 0;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = khattab_image.width - 1; i > khattab_image.width - 21; --i)
+        {
+            for (int j = 0; j < khattab_image.height; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 0;
+                khattab_image(i, j, 1) = 0;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 0; i < khattab_image.width - 1; ++i)
+        {
+            for (int j = 0; j < 20; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 0;
+                khattab_image(i, j, 1) = 0;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 0; i < khattab_image.width - 1; ++i)
+        {
+            for (int j = khattab_image.height - 1; j > khattab_image.height - 21; --j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 0;
+                khattab_image(i, j, 1) = 0;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        //======================================================================================
+        for (int i = 20; i < 23; ++i)
+        {
+            for (int j = 0; j < khattab_image.height; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = khattab_image.width - 21; i > khattab_image.width - 24; --i)
+        {
+            for (int j = 0; j < khattab_image.height; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 0; i < khattab_image.width - 1; ++i)
+        {
+            for (int j = 20; j < 23; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 0; i < khattab_image.width - 1; ++i)
+        {
+            for (int j = khattab_image.height - 21; j > khattab_image.height - 24; --j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        //======================================================================================
+        for (int i = 25; i < 28; ++i)
+        {
+            for (int j = 25; j < khattab_image.height - 26; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = khattab_image.width - 26; i > khattab_image.width - 29; --i)
+        {
+            for (int j = 25; j < khattab_image.height - 26; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 25; i < khattab_image.width - 26; ++i)
+        {
+            for (int j = 25; j < 28; ++j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+        for (int i = 25; i < khattab_image.width - 26; ++i)
+        {
+            for (int j = khattab_image.height - 26; j > khattab_image.height - 29; --j)
+            { // Initialize average value
+                khattab_image(i, j, 0) = 255;
+                khattab_image(i, j, 1) = 255;
+                khattab_image(i, j, 2) = 255;
+            }
+        }
+    }
+    khattab_image.saveImage("saved.jpg");
+    unsaved_image = true;
+    return khattab_image;
 }
