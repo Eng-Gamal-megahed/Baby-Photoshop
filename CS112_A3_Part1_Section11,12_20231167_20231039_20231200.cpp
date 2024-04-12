@@ -11,6 +11,7 @@
 #include <cstdlib>
 #include <string>
 #include <cstdio>
+#include <vector>
 #include "Image_Class.h"
 using namespace std;
 string SYSTEM_COLOR;
@@ -38,6 +39,9 @@ string get_image(string);
 Image Frame_image(string);
 Image Gamal_detect_edges(string);
 Image Gamal_sunlight(string);
+Image Gamal_oil_painting(string);
+Image Gamal_prison(string);
+Image Gamal_Chess(string);
 bool valid_exe(string);
 // string saveBefore(bool);
 bool unsaved_image = false;
@@ -59,14 +63,14 @@ int main()
 
     while (true)
     { // let the user choose the filter he wants
-        cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images. \n9) Frame \n10) Detect Edges\n13) Natural Sunlight\n19) Save the image.\n20) Exit\n"
+        cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images. \n9) Frame \n10) Detect Edges\n13) Natural Sunlight\n14) Oil Painting \n19) Prison \n20) Chess \n21) Save the image.\n22) Exit\n"
              << RESET_COLOR;
         choice = get_int("Enter your choice: "); // Check the validation of the input
-        while (choice != 0 && choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 7 && choice != 8 && choice != 9 && choice != 10 && choice != 13 && choice != 19 && choice != 20)
+        while (choice < 0 || choice > 22)
         {
             cout << RED << "Invalid input! PLease, Follow the instructions.\n"
                  << RESET_COLOR;
-            cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images.\n9) Frame \n10) Detect Edges\n13) Natural Sunlight\n19) Save the image.\n20) Exit\n"
+            cout << SYSTEM_COLOR << "Which filter do you want?\n0) Load a new image.\n1) Grayscale Conversion.\n2) Black and White.\n3) Invert Image.\n4) Merge Images.\n5) Flip Image.\n6) Rotate Image.\n7) Darken and Lighten Image.\n8) Crop Images.\n9) Frame \n10) Detect Edges\n13) Natural Sunlight\n14) Oil Painting\n19) Prison \n20) Chess \n21) Save the image.\n22) Exit\n"
                  << RESET_COLOR;
             choice = get_int("Enter your choice: ");
         }
@@ -200,7 +204,22 @@ int main()
             remove("saved.jpg");
             Gamal_sunlight(Gamal_Khatab_Mostafa_filename);
         }
+        else if (choice == 14)
+        {
+            remove("saved.jpg");
+            Gamal_oil_painting(Gamal_Khatab_Mostafa_filename);
+        }
         else if (choice == 19)
+        {
+            remove("saved.jpg");
+            Gamal_prison(Gamal_Khatab_Mostafa_filename);
+        }
+        else if (choice == 20)
+        {
+            remove("saved.jpg");
+            Gamal_Chess(Gamal_Khatab_Mostafa_filename);
+        }
+        else if (choice == 21)
         {
             char c; // ask him if he wants to save these canges on the image or change it, too
             cout << SYSTEM_COLOR << "Do you want to save changes in the same image?\n"
@@ -246,7 +265,7 @@ int main()
             }
             unsaved_image = false;
         }
-        else if (choice == 20)
+        else if (choice == 22)
         {
             if (unsaved_image)
             {
@@ -1218,4 +1237,143 @@ Image Frame_image(string khattab_filename)
     khattab_image.saveImage("saved.jpg");
     unsaved_image = true;
     return khattab_image;
+}
+
+Image Gamal_oil_painting(string filename)
+{
+    Image Gamal_image(filename);
+    Image Gamal_output_image(Gamal_image.width, Gamal_image.height);
+    int radius;
+    radius = get_int(SYSTEM_COLOR + "Chose the neiboohood degree you want to work on from (1 to 20) : ");
+    while (radius < 1 || radius > 20)
+    {
+        cout << RED << "Invalid choice, please follow the instructions\n"
+             << RESET_COLOR;
+        radius = get_int(SYSTEM_COLOR + "Chose the neiboohood degree you want to work on from (1 to 20) : ");
+    }
+
+    for (int i = radius; i < Gamal_image.width - radius; ++i)
+    {
+        for (int j = radius; j < Gamal_image.height - radius; ++j)
+        {
+            vector<int> intensityCount(20, 0);
+            vector<int> averageR(20, 0);
+            vector<int> averageG(20, 0);
+            vector<int> averageB(20, 0);
+
+            for (int di = -radius; di <= radius; ++di)
+            {
+                for (int dj = -radius; dj <= radius; ++dj)
+                {
+                    int r, g, b;
+                    r = Gamal_image(i + di, j + dj, 0);
+                    g = Gamal_image(i + di, j + dj, 1);
+                    b = Gamal_image(i + di, j + dj, 2);
+                    int curIntensity = int(((r + g + b) / 3.0 * 20 / 255.0));
+                    intensityCount[curIntensity]++;
+                    averageR[curIntensity] += r;
+                    averageG[curIntensity] += g;
+                    averageB[curIntensity] += b;
+                }
+            }
+
+            int maxIndex = 0;
+            int curMax = intensityCount[0];
+            for (int k = 1; k < 20; ++k)
+            {
+                if (intensityCount[k] > curMax)
+                {
+                    curMax = intensityCount[k];
+                    maxIndex = k;
+                }
+            }
+
+            int finalR = averageR[maxIndex] / curMax;
+            int finalG = averageG[maxIndex] / curMax;
+            int finalB = averageB[maxIndex] / curMax;
+
+            // Blend original colors with oil painted colors
+            Gamal_output_image(i, j, 0) = (Gamal_image(i, j, 0) + finalR) / 2;
+            Gamal_output_image(i, j, 1) = (Gamal_image(i, j, 1) + finalG) / 2;
+            Gamal_output_image(i, j, 2) = (Gamal_image(i, j, 2) + finalB) / 2;
+        }
+    }
+
+    Gamal_output_image.saveImage("saved.jpg");
+    unsaved_image = true;
+    return Gamal_output_image;
+}
+Image Gamal_prison(string filename)
+{
+    Image Gamal_image(filename);
+    Image Gamal_output_image(filename);
+    int color = 0;
+    for (int i = 30; i < Gamal_image.width - 17; i += 60)
+    {
+        for (int j = 17; j < Gamal_image.height - 17; j += 1)
+        {
+            for (int k = 0; k < 3; k++)
+            {
+                for (int di = -17; di <= 17; di++)
+                {
+                    for (int dj = -17; dj <= 17; dj++)
+                    {
+                        Gamal_output_image(i + di, j + dj, k) = 15 * (17 - abs(di));
+                    }
+                }
+            }
+        }
+    }
+
+    Gamal_output_image.saveImage("saved.jpg");
+    unsaved_image = true;
+    return Gamal_output_image;
+}
+
+Image Gamal_Chess(string filename)
+{
+    int num;
+    num = get_int(SYSTEM_COLOR + "Chose how many tiles you want in the row from (2 : 20) :");
+    while (num < 2 || num > 20)
+    {
+        cout << RED << "Invalid choice, please follow the instructions\n"
+             << RESET_COLOR;
+        num = get_int(SYSTEM_COLOR + "Chose how many tiles you want in the row from (2 : 20) :");
+    }
+    float division = 1.0f / num;
+
+    // Load the original image
+    Image Gamal_image(filename);
+
+    // Create a new image for output
+    Image Gamal_output_image(Gamal_image.width, Gamal_image.height);
+
+    for (int i = 0; i < num; ++i)
+    {
+        for (int j = 0; j < num; ++j)
+        {
+            // Calculate the brightness level based on the sub-image position
+            int brightness = (i + j) % 2 == 0 ? 0 : 255;
+
+            // Apply brightness adjustment to the sub-image
+            int Gamal_width, Gamal_height;
+            Gamal_width = (i == num - 1) ? Gamal_image.width : (i + 1) * division * Gamal_image.width;
+            Gamal_height = (j == num - 1) ? Gamal_image.height : (j + 1) * division * Gamal_image.height;
+            for (int x = i * division * Gamal_image.width; x < Gamal_width; ++x)
+            {
+                for (int y = j * division * Gamal_image.height; y < Gamal_height; ++y)
+                {
+                    for (int c = 0; c < 3; ++c)
+                    {
+                        Gamal_output_image(x, y, c) = ((Gamal_image(x, y, c) + brightness) / 2);
+                    }
+                }
+            }
+        }
+    }
+
+    // Save the modified image
+    Gamal_output_image.saveImage("saved.jpg");
+    unsaved_image = true;
+    return Gamal_output_image;
 }
