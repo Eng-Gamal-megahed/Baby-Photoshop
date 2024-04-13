@@ -12,6 +12,7 @@
 #include <string>
 #include <cstdio>
 #include <vector>
+#include <random>
 #include "Image_Class.h"
 using namespace std;
 string SYSTEM_COLOR;
