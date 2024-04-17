@@ -5,8 +5,6 @@
 // -Gamal Megahed Sayed Mohamed (20231039) (eng.gamalmegahed@gmail.com), Section 12 , Did Filter_1 , Filter_4 , Filter_7 , Filter_10 , Filter_13 , Filter_14 , Filter_21 , Filter_22.
 // -Mostafa Ehab Mostafa Akl (20231167) (mostafaehabakl@gmail.com) , Section 12 , Did Filter_2 , Filter_5 , Filter_8 , Filter_11 , Filter_15 , Filter_18.
 // -Walid Adel Mordy Rohyem (20231200) (khattabadel112005@gmail.com), Section 11 , Did Filter_3 . Filter_6 , Filter_9 , Filter_12 , Filter_16 , Filter_17.
-// Git Hub repository link : https://github.com/Eng-Gamal-megahed/Assignment--3.git
-// System diagram link : https://drive.google.com/file/d/1yyqS5MT3MBSw9ftd6VhLG1HlIRlgFr9W/view?usp=sharing
 //===================================================================================================================================================================================
 #include <iostream>
 #include <limits>
@@ -15,6 +13,8 @@
 #include <cstdio>
 #include <vector>
 #include <random>
+#include <stdlib.h>
+#include <time.h>
 #include "Image_Class.h"
 using namespace std;
 string SYSTEM_COLOR;
@@ -122,8 +122,9 @@ int main()
                         {
                             string new_filename, old_filename = "saved.jpg";
 
-                            cout << SYSTEM_COLOR << "Pls enter image name to store new image\n" << RESET_COLOR;
-                            cout << SYSTEM_COLOR << "and specify extension .jpg, .bmp, .png, .tga: "<< RESET_COLOR;
+                            cout << SYSTEM_COLOR << "Pls enter image name to store new image\n"
+                                 << RESET_COLOR;
+                            cout << SYSTEM_COLOR << "and specify extension .jpg, .bmp, .png, .tga: " << RESET_COLOR;
                             cin >> new_filename;
                             while (!valid_exe(new_filename)) // Check if he insrted a valid extension
                             {
@@ -159,103 +160,223 @@ int main()
         } // Now let the user choose the ideal filter to apply it
         else if (choice == 1)
         {
-            remove("saved.jpg");
-            Gamal_gray_scale(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Gamal_gray_scale("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Gamal_gray_scale(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 2)
         {
-            remove("saved.jpg");
-            Black_and_White(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Black_and_White("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Black_and_White(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 3)
         {
-            remove("saved.jpg");
-            Invert_Image(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Invert_Image("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Invert_Image(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 4)
         {
-            remove("saved.jpg");
-            Gamal_Merge_Images(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Gamal_Merge_Images("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Gamal_Merge_Images(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 5)
         {
-            remove("saved.jpg");
-            Flip_Image(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Flip_Image("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Flip_Image(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 6)
         {
-            remove("saved.jpg");
-            Rotate_Image(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Rotate_Image("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Rotate_Image(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 7)
         {
-            remove("saved.jpg");
-            Gamal_Darken_and_Lighten_Image(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Gamal_Darken_and_Lighten_Image("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Gamal_Darken_and_Lighten_Image(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 8)
         {
-            remove("saved.jpg");
-            Crop_Images(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Crop_Images("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Crop_Images(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 9)
         {
-            remove("saved.jpg");
-            Frame_image(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Frame_image("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Frame_image(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 10)
         {
-            remove("saved.jpg");
-            Gamal_detect_edges(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Gamal_detect_edges("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Gamal_detect_edges(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 11)
         {
-            remove("saved.jpg");
-            Resizing_Images(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Resizing_Images("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Resizing_Images(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 12)
         {
-            remove("saved.jpg");
-            Blure_image(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Blure_image("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Blure_image(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 13)
         {
-            remove("saved.jpg");
-            Gamal_sunlight(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Gamal_sunlight("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Gamal_sunlight(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 14)
         {
-            remove("saved.jpg");
-            Gamal_oil_painting(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Gamal_oil_painting("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Gamal_oil_painting(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 15)
         {
-            remove("saved.jpg");
-            Old_TV(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Old_TV("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Old_TV(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 16)
         {
-            remove("saved.jpg");
-            Purple_image(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Purple_image("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Purple_image(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 17)
         {
-            remove("saved.jpg");
-            Infrared_image(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Infrared_image("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Infrared_image(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 18)
         {
-            remove("saved.jpg");
-            skew_Images(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                skew_Images("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                skew_Images(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 19)
         {
-            remove("saved.jpg");
-            Gamal_prison(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Gamal_prison("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Gamal_prison(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 20)
         {
-            remove("saved.jpg");
-            Gamal_Chess(Gamal_Khatab_Mostafa_filename);
+            try
+            {
+                Gamal_Chess("saved.jpg");
+            }
+            catch (invalid_argument)
+            {
+                Gamal_Chess(Gamal_Khatab_Mostafa_filename);
+            }
         }
         else if (choice == 21)
         {
@@ -278,7 +399,7 @@ int main()
             if (c == 'a') // save the changes on thesame image
             {
                 string new_filename = Gamal_Khatab_Mostafa_filename, old_filename = "saved.jpg";
-                ;
+
                 remove(Gamal_Khatab_Mostafa_filename.c_str());
                 rename(old_filename.c_str(), new_filename.c_str());
                 system(Gamal_Khatab_Mostafa_filename.c_str());
@@ -287,8 +408,9 @@ int main()
             {
                 string new_filename, old_filename = "saved.jpg";
                 ;
-                cout << SYSTEM_COLOR << "Pls enter image name to store new image\n" << RESET_COLOR;
-                cout << SYSTEM_COLOR << "and specify extension .jpg, .bmp, .png, .tga: "<< RESET_COLOR;
+                cout << SYSTEM_COLOR << "Pls enter image name to store new image\n"
+                     << RESET_COLOR;
+                cout << SYSTEM_COLOR << "and specify extension .jpg, .bmp, .png, .tga: " << RESET_COLOR;
                 cin >> new_filename;
                 while (!valid_exe(new_filename))
                 {
@@ -343,8 +465,9 @@ int main()
                         {
                             string new_filename, old_filename = "saved.jpg";
                             ;
-                            cout << SYSTEM_COLOR << "Pls enter image name to store new image\n" << RESET_COLOR;
-                            cout << SYSTEM_COLOR << "and specify extension .jpg, .bmp, .png, .tga: "<< RESET_COLOR;
+                            cout << SYSTEM_COLOR << "Pls enter image name to store new image\n"
+                                 << RESET_COLOR;
+                            cout << SYSTEM_COLOR << "and specify extension .jpg, .bmp, .png, .tga: " << RESET_COLOR;
                             cin >> new_filename;
                             while (!valid_exe(new_filename)) // Check if the exetension is valid or not
                             {
@@ -552,6 +675,8 @@ Image Rotate_Image(string Gamal_Khatab_Mostafa_filename)
     }
 
     unsaved_image = true;
+    system("saved.jpg");
+
     return khattab_image;
 }
 //===========================================================================================
@@ -595,6 +720,8 @@ Image Infrared_image(string file_name)
 
     khattab_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return khattab_image; // Saving the modified image with the provided new name
 }
 //========================================================================================================================
@@ -619,6 +746,8 @@ Image Purple_image(string file_name)
     }
     khattab_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return khattab_image; // Saving the modified image with the provided new name
 }
 
@@ -641,6 +770,7 @@ Image Invert_Image(string Gamal_Khatab_Mostafa_filename)
     }
 
     khattab_image.saveImage("saved.jpg");
+    system("saved.jpg");
 
     unsaved_image = true;
     return khattab_image;
@@ -672,6 +802,8 @@ Image Gamal_gray_scale(string Gamal_filename)
 
     Gamal_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Gamal_image;
 }
 //====================================================================================================================
@@ -717,6 +849,8 @@ Image Gamal_Merge_Images(string filename)
 
     Gamal_scnd.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Gamal_scnd;
 }
 //====================================================================================================================
@@ -776,6 +910,8 @@ Image Blure_image(string file_name)
 
     khattab_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return khattab_image;
 }
 //=====================================================================================================================
@@ -820,8 +956,7 @@ Image Gamal_Darken_and_Lighten_Image(string Gamal_filename)
     }
 
     Gamal_image.saveImage("saved.jpg");
-    //        system(Gamal_filename.c_str());
-    //    }
+    system("saved.jpg");
     unsaved_image = true;
     return Gamal_image;
 }
@@ -863,6 +998,8 @@ Image Black_and_White(string Mustafa_filename)
     }
     Mustafa_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Mustafa_image;
 }
 //====================================================================================================================
@@ -921,6 +1058,8 @@ Image Flip_Image(string Mustafa_filename)
             cout << RED << "Please, enter a valid input." << RESET_COLOR;
         }
     }
+    system("saved.jpg");
+
     return Mustafa_image;
 }
 //======================================================================================================================
@@ -969,6 +1108,8 @@ Image Crop_Images(string Mustafa_filename)
     }
     Mustafa_image2.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Mustafa_image;
 }
 
@@ -1071,6 +1212,8 @@ Image Gamal_detect_edges(string image_name)
     // Save the output image
     Gamal_output_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Gamal_output_image;
 }
 
@@ -1108,6 +1251,8 @@ Image Gamal_sunlight(string Gamal_Khatab_Mostafa_filename)
     }
     Gamal_output_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Gamal_output_image;
 }
 
@@ -1401,6 +1546,8 @@ Image Frame_image(string khattab_filename)
     }
     khattab_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return khattab_image;
 }
 
@@ -1466,6 +1613,8 @@ Image Gamal_oil_painting(string filename)
 
     Gamal_output_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Gamal_output_image;
 }
 Image Gamal_prison(string filename)
@@ -1492,6 +1641,8 @@ Image Gamal_prison(string filename)
 
     Gamal_output_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Gamal_output_image;
 }
 
@@ -1540,131 +1691,154 @@ Image Gamal_Chess(string filename)
     // Save the modified image
     Gamal_output_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Gamal_output_image;
 }
 //===================================================================================================================================
-double int_checker_11(string word){
+double int_checker_11(string word)
+{
     string str;
     cout << SYSTEM_COLOR << "Enter the new " << word << " you want to change on the image:" << RESET_COLOR;
 
-    while (true) {
+    while (true)
+    {
 
-        try {
+        try
+        {
             cin >> str;
             stoi(str);
         }
-        catch (...) {
+        catch (...)
+        {
             cout << RED << "Please,enter a valid input(You should enter an integer)\nPlease,try again:" << RESET_COLOR;
             continue;
-
         }
         break;
     }
     return stod(str);
 }
-Image Resizing_Images(string Mustafa_filename) {
-    int Mustafa_width = 2000 ,  Mustafa_height = 2000;
+Image Resizing_Images(string Mustafa_filename)
+{
+    int Mustafa_width = 2000, Mustafa_height = 2000;
 
     Mustafa_width = int_checker_11("width");
 
     Mustafa_height = int_checker_11("height");
 
-    double resize_width , resize_height;
+    double resize_width, resize_height;
     Image Mustafa_image(Mustafa_filename);
 
-    Image Mustafa_image2(Mustafa_width,Mustafa_height );
-    resize_width = Mustafa_image.width / double (Mustafa_width);
-    resize_height = Mustafa_image.height / double (Mustafa_height);
+    Image Mustafa_image2(Mustafa_width, Mustafa_height);
+    resize_width = Mustafa_image.width / double(Mustafa_width);
+    resize_height = Mustafa_image.height / double(Mustafa_height);
 
-    for (long  i = 0; i < Mustafa_image2.width; ++i) {
-        for (long  j = 0; j < Mustafa_image2.height; ++j) {
-            for (int k = 0; k < 3; ++k) {
-                Mustafa_image2(i ,j ,k) = Mustafa_image(round(i * resize_width),round(j * resize_height),k);
+    for (long i = 0; i < Mustafa_image2.width; ++i)
+    {
+        for (long j = 0; j < Mustafa_image2.height; ++j)
+        {
+            for (int k = 0; k < 3; ++k)
+            {
+                Mustafa_image2(i, j, k) = Mustafa_image(round(i * resize_width), round(j * resize_height), k);
             }
-
-
         }
     }
 
     Mustafa_image2.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Mustafa_image2;
 }
 //=====================================================================================================================================
-Image Old_TV(string Mustafa_filename) {
+Image Old_TV(string Mustafa_filename)
+{
     srand(time(0));
 
     Image Mustafa_image(Mustafa_filename);
-    for (int r = 0; r < 20000; ++r) {
-        long  randompxlight_x =  rand() % (Mustafa_image.width )
-            , randompxlight_y =  rand() % (Mustafa_image.height )
-            , randompxdark_x =  rand() % (Mustafa_image.width )
-            , randompxdark_y =  rand() % (Mustafa_image.height );
+    for (int r = 0; r < 20000; ++r)
+    {
+        long randompxlight_x = rand() % (Mustafa_image.width), randompxlight_y = rand() % (Mustafa_image.height), randompxdark_x = rand() % (Mustafa_image.width), randompxdark_y = rand() % (Mustafa_image.height);
 
-        for (int k = 0; k < 3; ++k) {
+        for (int k = 0; k < 3; ++k)
+        {
             int X = round(Mustafa_image(randompxlight_x, randompxlight_y, k) * 1.3);
-            Mustafa_image(randompxlight_x, randompxlight_y, k) = min( X , 255) ;
+            Mustafa_image(randompxlight_x, randompxlight_y, k) = min(X, 255);
             Mustafa_image(randompxdark_x, randompxdark_y, k) /= 1.3;
         }
     }
 
-    for (int j = 0; j < Mustafa_image.height; j += 8 * 2) {
-        if ((j + 8) <= Mustafa_image.height ){
-            for (int l = j; l < j + 8; ++l) {
-                for (int i = 0; i < Mustafa_image.width; ++i) {
-                    for (int k = 0; k < 3; ++k) {
-                        Mustafa_image(i,l,k ) /= 1.3;
+    for (int j = 0; j < Mustafa_image.height; j += 8 * 2)
+    {
+        if ((j + 8) <= Mustafa_image.height)
+        {
+            for (int l = j; l < j + 8; ++l)
+            {
+                for (int i = 0; i < Mustafa_image.width; ++i)
+                {
+                    for (int k = 0; k < 3; ++k)
+                    {
+                        Mustafa_image(i, l, k) /= 1.3;
                     }
-
                 }
             }
         }
     }
     Mustafa_image.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Mustafa_image;
 }
 //===========================================================================================================
-double int_checker_18(){
+double int_checker_18()
+{
     string str;
     cout << SYSTEM_COLOR << "Enter the degree of skewing you want to do on the image:" << RESET_COLOR;
-    while (true) {
+    while (true)
+    {
 
-        try {
+        try
+        {
             cin >> str;
             stoi(str);
         }
-        catch (...) {
+        catch (...)
+        {
             cout << RED << "Please,enter a valid input(You should enter an integer)\nPlease,try again:" << RESET_COLOR;
             continue;
-
         }
         break;
     }
     return stod(str);
 }
-Image skew_Images(string Mustafa_filename) {
-    long double width2 ,degree;
+Image skew_Images(string Mustafa_filename)
+{
+    long double width2, degree;
     string degree_str;
     const long double Pi = 3.1415926535897932384626433832795;
 
     degree = int_checker_18();
 
     Image Mustafa_image(Mustafa_filename);
-    width2 =  ceil(tan(((degree) * Pi) / 180) * Mustafa_image.height);
+    width2 = ceil(tan(((degree)*Pi) / 180) * Mustafa_image.height);
 
-    Image Mustafa_image2(Mustafa_image.width + width2,Mustafa_image.height );
+    Image Mustafa_image2(Mustafa_image.width + width2, Mustafa_image.height);
 
-    for (long  j = 0 ; j < Mustafa_image.height; ++j) {
-        for (long  i = 0 ; i < Mustafa_image.width; ++i) {
-            for (int k = 0; k < 3; ++k) {
-                Mustafa_image2(  abs(width2 + i  - ( j * ( tan(((degree) * Pi) / 180) ) ) ),j ,k) = Mustafa_image(i,j,k);
-
+    for (long j = 0; j < Mustafa_image.height; ++j)
+    {
+        for (long i = 0; i < Mustafa_image.width; ++i)
+        {
+            for (int k = 0; k < 3; ++k)
+            {
+                Mustafa_image2(abs(width2 + i - (j * (tan(((degree)*Pi) / 180)))), j, k) = Mustafa_image(i, j, k);
             }
         }
     }
 
     Mustafa_image2.saveImage("saved.jpg");
     unsaved_image = true;
+    system("saved.jpg");
+
     return Mustafa_image2;
 }
