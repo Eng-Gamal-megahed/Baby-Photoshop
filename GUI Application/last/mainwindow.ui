@@ -1,0 +1,2878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1532</width>
+    <height>731</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <item>
+     <spacer name="verticalSpacer_9">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>Elephant</family>
+              <pointsize>20</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel
+{
+	color :rgb(51, 153, 153);
+	font: 20pt &quot;Elephant&quot;;
+}</string>
+            </property>
+            <property name="text">
+             <string>🤩🥰❤ Ahllan Ya User Ya Habyby ❤🥰🤩</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <family>Elephant</family>
+                <pointsize>16</pointsize>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+	font: 16pt &quot;Elephant&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Choose the Image :</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 3em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Browse</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="3" column="2">
+           <widget class="QPushButton" name="btnFrame2">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Frame (2)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QPushButton" name="btnDENormal">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Detect Edges Normal mood</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="4">
+           <widget class="QPushButton" name="btnInfrared">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Infrared_image</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QPushButton" name="btnHFlip">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Horizontal Flip </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btnGray">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Gray scale</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="btnRotate90">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Rotate (90)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="btnInvert">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Invert Image</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="5">
+           <widget class="QPushButton" name="btnLighten">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Lighten</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QPushButton" name="btnFrame3">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Frame (3)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="btnSunlight">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Natural Sunlight</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="btnFrame1">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Frame (1)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="QPushButton" name="btnDarken">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Darken</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QPushButton" name="btnVFlip">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Vertical Flip</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="brnRoatate180">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Rotate (180)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="btnB_W">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Black and White</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="5">
+           <widget class="QPushButton" name="btnDEFire">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Detect Edges Fire mood</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QPushButton" name="btnOld_TV">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Old_TV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QPushButton" name="btnPurple">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Purple</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="btnRotate270">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Rotate (270)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="5">
+           <widget class="QPushButton" name="btnPrison">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Prison</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="6">
+           <spacer name="horizontalSpacer_17">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="0">
+           <spacer name="horizontalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="font">
+                 <font>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+                </property>
+                <property name="text">
+                 <string>Choose The socend photo :</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="styleSheet">
+                 <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 3em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+                </property>
+                <property name="text">
+                 <string>Merge</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <item>
+           <spacer name="horizontalSpacer_16">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_15">
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+              </property>
+              <property name="text">
+               <string>Starting point :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_18">
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="text">
+                   <string>(X) :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="XD">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>198</width>
+                    <height>8</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>200</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="baseSize">
+                   <size>
+                    <width>200</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color : rgb(85, 170,  255);
+	background-color: rgb(34, 36, 44);
+}</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string> Enter the (X) Coordinate :</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_19">
+                <item>
+                 <widget class="QLabel" name="label_13">
+                  <property name="text">
+                   <string>(Y) :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="YD">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>198</width>
+                    <height>8</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>200</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="baseSize">
+                   <size>
+                    <width>200</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color : rgb(85, 170,  255);
+	background-color: rgb(34, 36, 44);
+}</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string> Enter the (Y) Coordinate :</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_18">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="text">
+               <string>Dimensions :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_16">
+                <item>
+                 <widget class="QLabel" name="label_9">
+                  <property name="font">
+                   <font>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Width  :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="CropWidth">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>198</width>
+                    <height>8</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>200</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="baseSize">
+                   <size>
+                    <width>200</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string> Enter the width :</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_17">
+                <item>
+                 <widget class="QLabel" name="label_10">
+                  <property name="font">
+                   <font>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Height :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="CropHieght">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>198</width>
+                    <height>8</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>200</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="baseSize">
+                   <size>
+                    <width>200</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color : rgb(85, 170,  255);
+	background-color: rgb(34, 36, 44);
+}</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string> Enter the height :</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnCrop">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 3em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+              </property>
+              <property name="text">
+               <string>Crop</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="font">
+                   <font>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Width :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="ResizeWidth">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>198</width>
+                    <height>8</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>200</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="baseSize">
+                   <size>
+                    <width>200</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>  Enter the width :</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="font">
+                   <font>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Height :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="RsizeHieght">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>198</width>
+                    <height>8</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>200</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="baseSize">
+                   <size>
+                    <width>200</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string> Enter the height :</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnResize">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 3em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+              </property>
+              <property name="text">
+               <string>Resize</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_14">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+            </property>
+            <property name="text">
+             <string>Intensity from 2 to 20 :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Intensity">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string> Enter the intensity of filter Blur or Oil Painting :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QPushButton" name="btnBlur">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 3em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+              </property>
+              <property name="text">
+               <string>Blur</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnOIL">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 3em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+              </property>
+              <property name="text">
+               <string>Oil Painting</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+              </property>
+              <property name="text">
+               <string> The Degree :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Degree">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}</string>
+              </property>
+              <property name="placeholderText">
+               <string> Enter the skew degree :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSkew">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 3em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+              </property>
+              <property name="text">
+               <string>Skew</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_14">
+            <item>
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="font">
+               <font>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+              </property>
+              <property name="text">
+               <string>Chess Tiles  from (2 : 20):</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="tiles">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}</string>
+              </property>
+              <property name="placeholderText">
+               <string>Choose how many tiles you want in the row :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnChess">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 3em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+              </property>
+              <property name="text">
+               <string>Chess</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_43">
+          <item>
+           <spacer name="horizontalSpacer_34">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSave">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+            </property>
+            <property name="text">
+             <string>Save in the same image</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_33">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_41">
+          <item>
+           <spacer name="horizontalSpacer_31">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_42">
+            <item>
+             <widget class="QLabel" name="label_29">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+	color : rgb(85, 255, 255);
+
+}</string>
+              </property>
+              <property name="text">
+               <string>File name  :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="savedName">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 0em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(66, 66, 66);
+}
+QLineEdit:hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+    border-color:  rgb(0, 0, 61) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}
+QLineEdit:focus
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 11px;
+	border : 2px solid;
+    border-color:  rgb(85, 170,  255) ;
+    font: 14px;
+    min-width: 10em;
+    min-height: 1em;
+    padding: 2px;
+	color :rgb(255, 255, 255);
+	background-color: rgb(34, 36, 44);
+}</string>
+              </property>
+              <property name="placeholderText">
+               <string>Enter name to save :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSave_2">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 72);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 3px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 65, 255), stop:1 rgba(71, 71, 71, 255));
+}
+QPushButton:Hover
+{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(70, 70, 70);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 0, 47, 255), stop:1 rgba(50, 50, 50, 255));
+}
+QPushButton:pressed
+{
+	
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(0, 127, 0);
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color :rgb(0, 216, 119);
+	background-color:qlineargradient(spread:pad, x1:0.0657277, y1:0.057, x2:0.676, y2:0.738636, stop:0 rgba(0, 85, 127, 255), stop:1 rgba(50, 50, 50, 255));
+}</string>
+              </property>
+              <property name="text">
+               <string>Save in a new image</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_32">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
